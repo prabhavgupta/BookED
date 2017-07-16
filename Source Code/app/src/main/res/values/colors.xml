@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3B494C</color>
+    <color name="colorPrimaryDark">#3B494C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorHead">#363147</color>
+    <color name="colorpara">#8b8a8d</color>
+    <color name="tabcolor">#3B494C</color>
+    <color name="recyclerviewbg">#E0E0E0</color>
+    <color name="profilebg">#4E4D5C</color>
+    <color name="profiletextcolor">#000000</color>
+    <color name="profiletoolbar">#fe6466</color>
+</resources>

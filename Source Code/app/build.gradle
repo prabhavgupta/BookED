@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        bookedJuly {
+            keyAlias 'key1'
+            keyPassword 'booked'
+            storeFile file('D:/bookedJuly.jks')
+            storePassword 'rashi1201'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.street35.booked"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.0.0.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.eftimoff:android-viewpager-transformers:1.0.1@aar'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.devlight:infinitecycleviewpager:1.0.2'
+    compile 'com.edwardvanraak:MaterialBarcodeScanner:0.0.6-ALPHA'
+    compile 'com.aurelhubert:ahbottomnavigation:1.3.3'
+    compile 'com.google.android.gms:play-services-vision:10.0.1'
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.google.android.gms:play-services-ads:10.0.1'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    compile 'com.google.firebase:firebase-crash:10.0.1'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    compile 'com.firebase:firebase-client-android:2.5.1'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile('com.afollestad.material-dialogs:core:0.9.1.0') {
+        transitive = true
+    }
+    compile 'me.zhanghai.android.materialprogressbar:library:1.3.0'
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'

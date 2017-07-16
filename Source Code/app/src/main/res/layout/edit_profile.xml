@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="First Name"
+               android:background="@drawable/edit_text_bg"
+               android:padding="@dimen/padding"
+               android:textColorHint="@color/tabcolor"
+               android:id="@+id/ep_first_name"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:background="@drawable/edit_text_bg"
+                android:padding="@dimen/padding"
+                android:textColorHint="@color/tabcolor"
+                android:id="@+id/ep_last_name"
+                android:layout_marginTop="20sp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profiledetails"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_face_black_24dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:id="@+id/sexicon"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+
+        <!--<EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:padding="12sp"
+            android:textColorHint="#ffffff"
+            android:layout_weight="2.5"
+            android:id="@+id/ep_sex"/>-->
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/marginbwprofiledetails">
+                <RadioButton android:id="@+id/ep_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Male"
+                    android:paddingRight="7sp"
+                    android:textColor="@color/tabcolor"
+                    android:shadowColor="@color/profiletextcolor"
+                    />
+
+                <RadioButton android:id="@+id/ep_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/tabcolor"
+                    android:shadowColor="@color/profiletextcolor"
+                    />
+
+                <RadioButton android:id="@+id/ep_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:textColor="@color/tabcolor"
+                    android:shadowColor="@color/profiletextcolor"
+                    />
+
+
+            </RadioGroup>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profiledetails"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_perm_phone_msg_black_24dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:id="@+id/contacticon"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:padding="12sp"
+            android:textColorHint="@color/tabcolor"
+            android:layout_weight="2.5"
+            android:inputType="phone"
+            android:textColor="@color/profiletextcolor"
+            android:id="@+id/ep_contact"/>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profiledetails"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_my_location_black_24dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:id="@+id/locationicon"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:padding="12sp"
+                android:textColorHint="@color/tabcolor"
+                android:layout_weight="2.5"
+
+                android:textColor="@color/profiletextcolor"
+                android:id="@+id/ep_address"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profiledetails"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_school_black_24dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:id="@+id/universityicon"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5">
+
+
+            <EditText
+                android:layout_width="0dp"
+
+                android:textColor="@color/profiletextcolor"
+                android:layout_height="wrap_content"
+                android:hint="University"
+                android:padding="12sp"
+                android:textColorHint="@color/tabcolor"
+                android:layout_weight="2.5"
+                android:id="@+id/ep_university"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="@dimen/profiledetails"
+        android:id="@+id/ep_submit"
+        android:background="@drawable/recyclerviewbg"
+        android:paddingLeft="@dimen/buttonpadding"
+        android:paddingRight="@dimen/buttonpadding"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

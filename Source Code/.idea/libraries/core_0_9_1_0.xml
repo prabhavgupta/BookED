@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="core-0.9.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/83720fdb3a534debd23a59b8d4332f390a858e83/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/83720fdb3a534debd23a59b8d4332f390a858e83/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad.material-dialogs/core/0.9.1.0/30bee7fd16a31b18fff49c2a41ec2e3fd0745254/core-0.9.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

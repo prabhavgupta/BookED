@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BookED</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="api_map_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyDUiFu07GuyrtWiXjGSf4Tl6fQFMegxWdo
+    </string>
+
+    <string name="App_id">ca-app-pub-7027418412989558~3661605829</string>
+    <string name="adunit">ca-app-pub-7027418412989558/5138339023</string>
+</resources>

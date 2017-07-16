@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#263238"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:id="@+id/profile_name"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/one"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sentiment_very_satisfied_black_24dp"
+                    android:id="@+id/detailimg"
+                    android:layout_alignLeft="@+id/o"
+                    android:layout_alignStart="@+id/o"
+                    android:layout_above="@+id/text1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To let us know who you are"
+                    android:id="@+id/text1"
+                    android:layout_below="@+id/detail"
+                    android:textColor="#95000000"
+                    android:layout_marginLeft="40sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/o"
+                    android:layout_below="@+id/text1"
+                    android:background="#30000000"
+                    android:layout_margin="10sp"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail"
+                    android:text="Details"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/text1"
+                    android:layout_alignStart="@+id/text1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/two"
+                android:layout_below="@+id/one"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your kind of smell of books"
+                    android:id="@+id/text2"
+                    android:textColor="#95000000"
+                    android:layout_below="@+id/favourities"
+                    android:layout_marginLeft="40sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/t"
+                    android:layout_below="@+id/text2"
+                    android:background="#30000000"
+                    android:layout_margin="10sp"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/favourities"
+                    android:text="Favorites | Coming Soon..."
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/text2"
+                    android:layout_alignStart="@+id/text2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_black_24dp"
+                    android:id="@+id/favimg"
+                    android:layout_above="@+id/text2"
+                    android:layout_alignLeft="@+id/t"
+                    android:layout_alignStart="@+id/t" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/three"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/two">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The ones you seek for"
+                    android:id="@+id/text3"
+                    android:layout_below="@+id/request"
+                    android:textColor="#95000000"
+                    android:layout_marginLeft="40sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/th"
+                    android:layout_below="@+id/text3"
+                    android:background="#30000000"
+                    android:layout_margin="10sp"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/request"
+                    android:text="Requests | Coming Soon..."
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/text3"
+                    android:layout_alignStart="@+id/text3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pan_tool_black_24dp"
+                    android:id="@+id/requestimg"
+                    android:layout_above="@+id/text3"
+                    android:layout_alignLeft="@+id/th"
+                    android:layout_alignStart="@+id/th" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/four"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/three">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Help us to serve better"
+                    android:id="@+id/text4"
+                    android:textColor="#95000000"
+                    android:layout_below="@+id/contactus"
+                    android:layout_marginLeft="40sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/fo"
+                    android:layout_below="@+id/text4"
+                    android:background="#30000000"
+                    android:layout_margin="10sp"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contactus"
+                    android:text="Contact Us "
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/text4"
+                    android:layout_alignStart="@+id/text4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_report_problem_black_24dp"
+                    android:id="@+id/contactusimg"
+                    android:layout_above="@+id/text4"
+                    android:layout_alignLeft="@+id/fo"
+                    android:layout_alignStart="@+id/fo" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

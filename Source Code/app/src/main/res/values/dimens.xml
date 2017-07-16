@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="padding">16sp</dimen>
+    <dimen name="profiledetails">15sp</dimen>
+    <dimen name="marginbwprofiledetails">10sp</dimen>
+    <dimen name="submitbutton">20sp</dimen>
+    <dimen name="buttonpadding">40sp</dimen>
+    <dimen name="notconnectedtext">20sp</dimen>
+</resources>

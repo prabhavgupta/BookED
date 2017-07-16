@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_gravity="center"
+        android:padding="10sp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preview"
+            android:foregroundGravity="center_vertical"
+            android:layout_alignParentBottom="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Would like to navigate to nearby books"
+            android:foregroundGravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start searching books now"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:paddingLeft="@dimen/buttonpadding"
+            android:paddingRight="@dimen/buttonpadding"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/round_corner_button"
+            android:layout_alignParentTop="true"
+            android:id="@+id/faltuButton"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
